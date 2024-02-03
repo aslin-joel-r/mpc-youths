@@ -30,7 +30,7 @@ export const Points = () => {
           ))}
         </tbody>
       </table>
-      <Link id='link'  to="/point-details">More about Point details</Link>
+      <Link id='link'  to="/mpc-youths/point-details">More about Point details</Link>
     </div>
   );
 };

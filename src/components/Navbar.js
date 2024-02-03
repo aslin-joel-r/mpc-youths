@@ -18,16 +18,16 @@ function Navbar(){
       </li>
       <li className="nav-item">
         
-        <Link className="nav-link" id="link" data-bs-toggle="pill"  to="/">Home</Link>
+        <Link className="nav-link" id="link" data-bs-toggle="pill"  to="/mpc-youths">Home</Link>
       </li>
       <li className="nav-item">
-      <Link className="nav-link" id="link" data-bs-toggle="pill"  to="/missions">Missions</Link>
+      <Link className="nav-link" id="link" data-bs-toggle="pill"  to="/mpc-youths/missions">Missions</Link>
       </li>
       <li className="nav-item">
-      <Link className="nav-link" id="link" data-bs-toggle="pill"  to="/points">Points</Link>
+      <Link className="nav-link" id="link" data-bs-toggle="pill"  to="/mpc-youths/points">Points</Link>
       </li>
     <li className="nav-item">
-    <Link className="nav-link" id="link" data-bs-toggle="pill"  to="/events">Events</Link>
+    <Link className="nav-link" id="link" data-bs-toggle="pill"  to="/mpc-youths/events">Events</Link>
       </li>
 
     </ul>
