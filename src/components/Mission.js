@@ -76,7 +76,7 @@ export const Mission=()=>{
       <div className="progress-container" data-pct="0">
         <svg className="progress-svg" width="200" height="200" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
           <circle className="progress-background" r="90" cx="100" cy="100" fill="transparent" ></circle>
-          <circle className="progress-bar" r="90" cx="100" cy="100" fill="transparent" style={{stroke:"#ff0000;"}}></circle>
+          <circle className="progress-bar" r="90" cx="100" cy="100" fill="transparent" style={{stroke:"#ff0000"}}></circle>
         </svg>
         <label hidden="true" className="progress-label" for="percent">0%</label>
       </div>
