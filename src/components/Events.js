@@ -12,7 +12,7 @@ export function Events() {
         <div className="card" style={width}>
           <br />
           <h4 className="card-title" style={{ textAlign: 'center', color: 'rgb(14, 43, 61)' }}>
-            Youth Meeting - 21/1/2024
+            Youth Meeting - 04/02/2024
           </h4>
           <br />
           <img className="card-img-top" src={welcome} alt="Card image" style={{ width: '100%' }} />
@@ -24,7 +24,6 @@ export function Events() {
           </div>
         </div>
       </div>
-      <br></br>
     </div>
   );
 }
