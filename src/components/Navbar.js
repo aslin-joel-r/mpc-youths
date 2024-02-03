@@ -8,7 +8,7 @@ function Navbar(){
                 
 <header>
 
-<nav  className="navbar navbar-expand-sm bg-light justify-content-center fixed-top border border-2">
+<nav  className="navbar navbar-expand-sm bg-light justify-content-center">
 
     <ul className="nav nav-pills"  role="tablist">
       <li className="nav-item">
@@ -21,7 +21,7 @@ function Navbar(){
         <Link className="nav-link" id="link" data-bs-toggle="pill"  to="/">Home</Link>
       </li>
       <li className="nav-item">
-      <Link className="nav-link" id="link" data-bs-toggle="pill"  to="/missions">Mission</Link>
+      <Link className="nav-link" id="link" data-bs-toggle="pill"  to="/missions">Missions</Link>
       </li>
       <li className="nav-item">
       <Link className="nav-link" id="link" data-bs-toggle="pill"  to="/points">Points</Link>

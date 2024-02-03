@@ -1,6 +1,6 @@
 export function PointDetails(){
     return (
-    <div>
+    <div className="default-container">
         <h2 id="heads" style={{marginTop:"130px"}}>Point details</h2>
     <table>
         <thead>

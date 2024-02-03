@@ -5,10 +5,9 @@ export function Events() {
   const width = { width: '400px' };
 
   return (
-    <div>
-      <br />
-      <h2 id="heads">Upcoming Events</h2>
-      <br />
+    <div className="default-container">
+     <h2 id="heads">Upcoming Events</h2>
+    <br/>
       <div id="events" className="container mt-3 ">
         <div className="card" style={width}>
           <br />

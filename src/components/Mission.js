@@ -35,8 +35,7 @@ export const Mission=()=>{
   
 
     return (
-        <div>
-                <h1 id="heads">2024 Missions</h1>
+        <div className="default-container">
                 <div className="container mt-3 pt-2 " id="center">
     
     <div className="card custom ">

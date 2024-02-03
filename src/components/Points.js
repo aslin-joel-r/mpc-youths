@@ -12,7 +12,7 @@ export const Points = () => {
   }, []); // Empty dependency array to run the effect only once
 
   return (
-    <div>
+    <div className="default-container">
       <h2 id="heads">Points Table - 2024 </h2>
       <table id="table">
         <thead>

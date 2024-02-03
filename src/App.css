@@ -1,20 +1,25 @@
 #center{
     text-align: center;
 }
+
+/* Style For the NavBar*/
+
 .navbar a:not(.logo):hover{
-    background-color:#0e2b3d;
-    color: white;
-    border-radius: 10px;
+  background-color:#0e2b3d;
+  color: white;
+  border-radius: 10px;
+}
+.navbar a{
+  font-size: 25px;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a {
+    font-size: 20px;
   }
-  .navbar a{
-    font-size: 25px;
-  }
- /* make the navbar font-size as 20px for mobile screens */
-  @media screen and (max-width: 600px) {
-    .navbar a {
-      font-size: 20px;
-    }
-  }
+}
+
+/* Style for the Table*/
     table, th, tr ,td {
         border: 3px solid rgb(0, 0, 0);
         border-collapse: collapse;
@@ -44,6 +49,17 @@
       color:#1b6dc1
       
     }
+    .default-container{
+      position: relative;
+  
+      padding: 15px;
+    }
+    @media screen and (max-width: 600px) {
+      .default-container {
+        position: relative;
+     padding: 10px;
+      }
+    }
     span{
       color:#0e2b3d;
       font-size: 25px;
@@ -54,8 +70,7 @@
         color: red;
         font-weight: bold;
         font-size: 30px;
-        position:relative;
-        margin-top:150px;
+       
     }
     .custom{
         border: 3px solid #114362 !important;
@@ -74,15 +89,11 @@
   
   color:#0e2b3d;
   font-weight: bold;
-  text-align: center;
+
   text-shadow: 2px 2px 2px #114362; 
 }
 #contact{
-  color:#1b6dc1
-}
-
-#container{
-  position: relative;
+  color:#1b6dc1 !important;
 }
 
 /* Style for Events page */
