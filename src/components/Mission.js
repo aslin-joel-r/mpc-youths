@@ -1,42 +1,41 @@
-export const Mission=()=>{
+import React, { useEffect, useRef, useState } from 'react';
 
-    function updateProgress(progressContainer) {
-        var percentLabel = progressContainer.querySelector('.progress-label');
-        var circle = progressContainer.querySelector('.progress-bar');
-  
-        var val = parseInt(percentLabel.textContent);
-  
-        if (isNaN(val)) {
-            val = 100;
-        } else {
-        var r = circle.getAttribute('r');
-        var c = Math.PI * (r * 2);
-  
-        if (val < 0) {
-            val = 0;
-        }
-        if (val > 100) {
-            val = 100;
-        }
-  
-        var pct = ((100 - val) / 100) * c;
-  
-        circle.style.strokeDashoffset = pct;
-        circle.style.strokeDasharray = c;
-        progressContainer.setAttribute('data-pct', val);
-        }
+export const Mission = () => {
+  const progressContainersRef = useRef([]);
+
+  const [progressPercent, setProgressPercent] = useState({});
+
+  const updateProgress = (progressContainer) => {
+    const percentLabel = progressContainer.querySelector('.progress-label');
+    const circle = progressContainer.querySelector('.progress-bar');
+
+    const val = parseInt(percentLabel.textContent);
+
+    if (isNaN(val)) {
+      setProgressPercent((prevProgressPercent) => ({ ...prevProgressPercent, [progressContainer.id]: 100 }));
+    } else {
+      const r = circle.getAttribute('r');
+      const c = Math.PI * (r * 2);
+
+      const clampedVal = Math.min(100, Math.max(0, val));
+      const pct = ((100 - clampedVal) / 100) * c;
+
+      circle.style.strokeDashoffset = pct;
+      circle.style.strokeDasharray = c;
+
+      setProgressPercent((prevProgressPercent) => ({ ...prevProgressPercent, [progressContainer.id]: clampedVal }));
     }
-  
-  // Example usage
-    var progressContainers = document.querySelectorAll('.progress-container');
-    progressContainers.forEach(function (container) {
-        updateProgress(container);
+  };
+
+  useEffect(() => {
+    progressContainersRef.current.forEach((container) => {
+      updateProgress(container);
     });
-  
+  }, [progressPercent]);
 
     return (
         <div className="default-container">
-                <div className="container mt-3 pt-2 " id="center">
+                <div className="container mt-3 pt-2 " id="mission1" ref={(ref) => (progressContainersRef.current[0] = ref)}>
     
     <div className="card custom ">
 
@@ -62,7 +61,7 @@ export const Mission=()=>{
     </div>
 </div>
 
-<div className="container mt-3 pt-2 " id="center">
+<div className="container mt-3 pt-2 " id="mission2" ref={(ref) => (progressContainersRef.current[1] = ref)}>
     
   <div className="card custom ">
 
@@ -89,7 +88,7 @@ export const Mission=()=>{
 </div>
 
 
-<div className="container mt-3 pt-2 " id="center">
+<div className="container mt-3 pt-2 " id="mission3" ref={(ref) => (progressContainersRef.current[2] = ref)}>
     
   <div className="card custom ">
 
