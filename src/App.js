@@ -15,7 +15,7 @@ function App() {
     <div>
         <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Navbar />}>
+        <Route path="/mpc-youths" element={<Navbar />}>
           <Route index element={<Home />} />
           <Route path="/missions" element={<Mission />} />
           <Route path="/points" element={<Points />} />
