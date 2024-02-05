@@ -27,7 +27,7 @@ function Navbar(){
       <Link className="nav-link" id="link" data-bs-toggle="pill"  to="/points">Points</Link>
       </li>
     <li className="nav-item">
-    <Link className="nav-link" id="link" data-bs-toggle="pill"  to="/mpc-youths/events">Events</Link>
+    <Link className="nav-link" id="link" data-bs-toggle="pill"  to="/events">Events</Link>
       </li>
 
     </ul>

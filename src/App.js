@@ -15,12 +15,12 @@ function App() {
     <div>
         <BrowserRouter>
       <Routes>
-        <Route path="/mpc-youths" element={<Navbar />}>
+        <Route path="/" element={<Navbar />}>
           <Route index element={<Home />} />
-          <Route path="/mpc-youths/missions" element={<Mission />} />
-          <Route path="/mpc-youths/points" element={<Points />} />
-           <Route path="/mpc-youths/events" element={<Events />} />
-           <Route path="/mpc-youths/point-details" element={<PointDetails />} />
+          <Route path="/missions" element={<Mission />} />
+          <Route path="/points" element={<Points />} />
+           <Route path="/events" element={<Events />} />
+           <Route path="/point-details" element={<PointDetails />} />
         </Route>
       </Routes>
     </BrowserRouter>
