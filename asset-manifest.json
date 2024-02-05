@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/mpc-youths/static/css/main.6f3202aa.css",
-    "main.js": "/mpc-youths/static/js/main.bebd1284.js",
+    "main.css": "/mpc-youths/static/css/main.ffb33098.css",
+    "main.js": "/mpc-youths/static/js/main.db41b883.js",
+    "static/media/quiz.png": "/mpc-youths/static/media/quiz.dca497e94e8fdad9921e.png",
     "static/media/welcome.jpeg": "/mpc-youths/static/media/welcome.28ac6f3354460853df22.jpeg",
     "index.html": "/mpc-youths/index.html",
-    "main.6f3202aa.css.map": "/mpc-youths/static/css/main.6f3202aa.css.map",
-    "main.bebd1284.js.map": "/mpc-youths/static/js/main.bebd1284.js.map"
+    "main.ffb33098.css.map": "/mpc-youths/static/css/main.ffb33098.css.map",
+    "main.db41b883.js.map": "/mpc-youths/static/js/main.db41b883.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f3202aa.css",
-    "static/js/main.bebd1284.js"
+    "static/css/main.ffb33098.css",
+    "static/js/main.db41b883.js"
   ]
 }
