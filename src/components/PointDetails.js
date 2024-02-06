@@ -10,17 +10,7 @@ export function PointDetails(){
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>Attedance</td>
-                <td class="points">2</td>
-            </tr>
-
-            <tr>
-                <td>Attenting Morning Online Prayer</td>
-                <td class="points">4</td>
-            </tr>
-           
-           
+                   
             <tr>
                 <td>Youth of the Week</td>
                 <td class="points">5</td>
