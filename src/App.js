@@ -17,10 +17,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Navbar />}>
           <Route index element={<Home />} />
-          <Route path="/missions" element={<Mission />} />
-          <Route path="/points" element={<Points />} />
+          {/* <Route path="/missions" element={<Mission />} /> */}
+          {/* <Route path="/points" element={<Points />} /> */}
            <Route path="/events" element={<Events />} />
-           <Route path="/point-details" element={<PointDetails />} />
+           {/* <Route path="/point-details" element={<PointDetails />} /> */}
         </Route>
       </Routes>
     </BrowserRouter>

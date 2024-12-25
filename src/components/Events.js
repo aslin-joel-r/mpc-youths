@@ -28,15 +28,15 @@ export function Events() {
     {
       title: 'Youth Meeting',
       date: '18/02/2024',
-      description: 'Next Youth Meeting will be held on 21/1/2024 from 2 pm to 3 pm. We welcome you to attend the meeting.',
+      description: 'Next Youth Meeting will be held on 5/1/2025 from 2 pm to 3 pm. We welcome you to attend the meeting.',
       image: welcome,
     },
-    {
-      title: 'Quiz Competition',
-      date: '18/02/2024',
-      description: 'Portion for Quiz Competion is Mathew : 21 to 28 . Price amount Rs. 250 ',
-      image: quiz,
-    },
+    // {
+    //   title: 'Quiz Competition',
+    //   date: '18/02/2024',
+    //   description: 'Portion for Quiz Competion is Mathew : 21 to 28 . Price amount Rs. 250 ',
+    //   image: quiz,
+    // },
     // Add more events as needed
   ];
 
